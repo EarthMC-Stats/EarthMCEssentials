@@ -52,7 +52,7 @@ public class TaskScheduler {
     void checkMap() {
         if (hasMap) return;
 
-        if (EMCEssentials.instance().clientOnlineInMap(KnownMap.AURORA)) {
+        if (EMCEssentials.instance().clientOnlineInSquaremap(KnownMap.AURORA)) {
             setHasMap(KnownMap.AURORA.getName());
         }
         else setHasMap(null);
